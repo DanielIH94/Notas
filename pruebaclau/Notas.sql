@@ -1,4 +1,5 @@
-CREATE DATABASE Notas USE Notas;
+CREATE DATABASE Notas; 
+USE Notas;
 
 CREATE TABLE if not exists Personal (
   idpersonal int AUTO_INCREMENT,

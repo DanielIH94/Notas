@@ -1,17 +1,18 @@
 package com.prueba.clau.pruebaclau.restApi.Entidades;
 
 import javax.persistence.CascadeType;
+import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.OneToOne;
 
+@Entity
 public class Usuario {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int idusuario;
-    private int idpersonal;
     private String nombreusuario;
     private String contraseña;
 
@@ -27,20 +28,12 @@ public class Usuario {
         this.idusuario = idusuario;
     }
 
-    public int getIdpersonal() {
-        return idpersonal;
-    }
-
     public Personal getPersonal() {
         return personal;
     }
 
     public void setPersonal(Personal personal) {
         this.personal = personal;
-    }
-
-    public void setIdpersonal(int idpersonal) {
-        this.idpersonal = idpersonal;
     }
 
     public String getNombreusuario() {

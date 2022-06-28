@@ -18,7 +18,7 @@ public class Personal {
     private String apematerno;
     private String nombre;
     private String direccion;
-    private Date fehcadeingreso;
+    private Date fechadeingreso;
 
     @OneToOne(mappedBy = "personal", cascade = CascadeType.REFRESH)
     private Usuario usuario;
@@ -63,12 +63,12 @@ public class Personal {
         this.direccion = direccion;
     }
 
-    public Date getFehcadeingreso() {
-        return fehcadeingreso;
+    public Date getFechadeingreso() {
+        return fechadeingreso;
     }
 
-    public void setFehcadeingreso(Date fehcadeingreso) {
-        this.fehcadeingreso = fehcadeingreso;
+    public void setFechadeingreso(Date fechadeingreso) {
+        this.fechadeingreso = fechadeingreso;
     }
 
     public Usuario getUsuario() {

@@ -3,6 +3,7 @@ package com.prueba.clau.pruebaclau.restApi.Entidades;
 import java.sql.Timestamp;
 
 import javax.persistence.CascadeType;
+import javax.persistence.Entity;
 import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -10,12 +11,11 @@ import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 
+@Entity
 public class Respuesta {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int idrespuesta;
-    private int idcomentario;
-    private int idusuario;
     private String respuesta;
     private Timestamp fecharespuesta;
 
@@ -33,22 +33,6 @@ public class Respuesta {
 
     public void setIdrespuesta(int idrespuesta) {
         this.idrespuesta = idrespuesta;
-    }
-
-    public int getIdcomentario() {
-        return idcomentario;
-    }
-
-    public void setIdcomentario(int idcomentario) {
-        this.idcomentario = idcomentario;
-    }
-
-    public int getIdusuario() {
-        return idusuario;
-    }
-
-    public void setIdusuario(int idusuario) {
-        this.idusuario = idusuario;
     }
 
     public String getRespuesta() {
