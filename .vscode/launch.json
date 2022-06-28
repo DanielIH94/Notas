@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-PruebaclauApplication<pruebaclau>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.prueba.clau.pruebaclau.PruebaclauApplication",
+            "projectName": "pruebaclau",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
